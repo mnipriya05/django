@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="hero-inner">
+        <p class="hero-badge">Welcome to my blog</p>
+        <h1 class="hero-title">Create, share, and explore blog posts</h1>
+        <p class="hero-text">Read posts and explore categories.</p>
+        <div class="hero-actions">
+            <a href="{% url 'auth_gate' %}" class="btn btn-primary btn-lg">Enter Blog</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
